@@ -19,7 +19,8 @@
             "mainClass": "com.formacionbdi.springboot.app.productos.SpringbootServicioProductosApplication",
             "projectName": "springboot-servicio-productos",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61700 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-productos"
         },
         {
             "type": "java",
@@ -29,7 +30,8 @@
             "mainClass": "com.formacionbdi.springboot.app.item.SpringbootServicioItemApplication",
             "projectName": "springboot-servicio-item",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61702 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-item"
         },
         {
             "type": "java",
@@ -38,6 +40,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.formacionbdi.springboot.app.zuul.SpringbootServicioZuulServerApplication",
             "projectName": "springboot-servicio-zuul-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioGatewayServerApplication<springboot-servicio-gateway-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.gateway.springbootserviciogatewayserver.SpringbootServicioGatewayServerApplication",
+            "projectName": "springboot-servicio-gateway-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
