@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioEurekaServerApplication<springboot-servicio-eureka-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.eureka.SpringbootServicioEurekaServerApplication",
+            "projectName": "springboot-servicio-eureka-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=54404 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-eureka-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioProductosApplication<springboot-servicio-productos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.productos.SpringbootServicioProductosApplication",
+            "projectName": "springboot-servicio-productos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioItemApplication<springboot-servicio-item>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.item.SpringbootServicioItemApplication",
+            "projectName": "springboot-servicio-item",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioZuulServerApplication<springboot-servicio-zuul-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.zuul.SpringbootServicioZuulServerApplication",
+            "projectName": "springboot-servicio-zuul-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
