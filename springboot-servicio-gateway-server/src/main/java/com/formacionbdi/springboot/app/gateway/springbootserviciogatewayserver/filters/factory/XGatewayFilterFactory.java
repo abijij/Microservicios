@@ -1,5 +1,7 @@
 package com.formacionbdi.springboot.app.gateway.springbootserviciogatewayserver.filters.factory;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -35,6 +37,17 @@ public class XGatewayFilterFactory extends AbstractGatewayFilterFactory<XGateway
             }));
         };
     }
+
+    @Override
+    public List<String> shortcutFieldOrder() {
+        
+        return Arrays.asList("mensaje", "cookieNombre", "cookieValor");
+    }
+
+    @Override
+	public String name() {
+		return "Ejemplo";
+	}
 
     public static class Configuration {
         private String mensaje;
