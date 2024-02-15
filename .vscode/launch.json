@@ -52,6 +52,16 @@
             "projectName": "springboot-servicio-gateway-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootServicioGatewayServerApplication<springboot-servicio-gateway-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.formacionbdi.springboot.app.gateway.SpringbootServicioGatewayServerApplication",
+            "projectName": "springboot-servicio-gateway-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
